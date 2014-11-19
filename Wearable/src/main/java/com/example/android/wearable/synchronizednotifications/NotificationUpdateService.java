@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.synchronizednotifications;
+package com.example.android.wearable.synchronizednotifications;
 
 import static com.google.android.gms.wearable.PutDataRequest.WEAR_URI_SCHEME;
 
@@ -26,7 +26,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.android.synchronizednotifications.common.Constants;
+import com.example.android.wearable.synchronizednotifications.common.Constants;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
@@ -107,7 +107,7 @@ public class NotificationUpdateService extends WearableListenerService
                 if (Constants.BOTH_PATH.equals(dataEvent.getDataItem().getUri().getPath())) {
                     // Dismiss the corresponding notification
                     ((NotificationManager) getSystemService(NOTIFICATION_SERVICE))
-                            .cancel(Constants.BOTH_ID);
+                            .cancel(Constants.WATCH_ONLY_ID);
                 }
             }
         }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.synchronizednotifications;
+package com.example.android.wearable.synchronizednotifications;
 
 import android.app.Activity;
 import android.os.Bundle;

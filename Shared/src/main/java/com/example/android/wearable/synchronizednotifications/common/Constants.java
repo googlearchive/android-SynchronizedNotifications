@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.synchronizednotifications.common;
+package com.example.android.wearable.synchronizednotifications.common;
 
 /**
  * Constants that are used in both the Application and the Wearable modules.
@@ -33,5 +33,5 @@ public final class Constants {
     public static final String KEY_CONTENT = "content";
 
     public static final String ACTION_DISMISS
-            = "com.example.android.synchronizednotifications.DISMISS";
+            = "com.example.android.wearable.synchronizednotifications.DISMISS";
 }

@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.example.android.synchronizednotifications;
+package com.example.android.wearable.synchronizednotifications;
 
 import android.graphics.Color;
 import android.os.Bundle;

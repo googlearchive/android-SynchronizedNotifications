@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.synchronizednotifications;
+package com.example.android.wearable.synchronizednotifications;
 
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -31,7 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.android.synchronizednotifications.common.Constants;
+import com.example.android.wearable.synchronizednotifications.common.Constants;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
@@ -40,8 +40,9 @@ import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
 
-import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 
 /**
@@ -190,8 +191,8 @@ public class SynchronizedNotificationsFragment extends Fragment
      * Returns a string built from the current time
      */
     private String now() {
-        DateFormat dateFormat = android.text.format.DateFormat.getTimeFormat(this.getActivity());
-        return dateFormat.format(new Date());
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
+        return sdf.format(new Date());
     }
 
 }
