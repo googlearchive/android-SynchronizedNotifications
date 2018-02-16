@@ -2,10 +2,11 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
@@ -13,18 +14,16 @@ apply plugin: 'com.android.application'
 
 repositories {
     jcenter()
-    maven {
-        url 'https://maven.google.com'
-    }
+    google()
 }
 
 dependencies {
-    compile 'com.google.android.gms:play-services-wearable:11.4.0'
-    compile 'com.android.support:support-v13:26.1.0'
+    compile 'com.google.android.gms:play-services-wearable:11.8.0'
+    compile 'com.android.support:support-v13:27.0.2'
 
-    provided 'com.google.android.wearable:wearable:2.0.5'
+    provided 'com.google.android.wearable:wearable:2.2.0'
 
-    compile 'com.google.android.support:wearable:2.0.5'
+    compile 'com.google.android.support:wearable:2.2.0'
 
     compile project(':Shared')
 }
@@ -39,9 +38,9 @@ List<String> dirs = [
 
 android {
 
-        compileSdkVersion 26
+    compileSdkVersion 27
 
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "27.0.2"
 
     defaultConfig {
         versionCode 1
